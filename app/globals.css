@@ -70,15 +70,18 @@ body {
 
 /* Font Weights */
 .font-light {
-  font-weight: 300; /* Light */
+  font-weight: 300;
+  /* Light */
 }
 
 .font-normal {
-  font-weight: 400; /* Normal */
+  font-weight: 400;
+  /* Normal */
 }
 
 .font-semibold {
-  font-weight: 600; /* Semi-Bold */
+  font-weight: 600;
+  /* Semi-Bold */
 }
 
 
@@ -86,11 +89,13 @@ body {
 .navbar {
   background-color: #000;
   padding: 1rem 0;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar .logo img {
-  height: auto; /* Maintain aspect ratio */
-  max-width: 100%; /* Ensure it doesn't overflow */
+  height: auto;
+  max-width: 100%;
 }
 
 .navbar .nav-links {
@@ -124,11 +129,12 @@ body {
 }
 
 .phone-link {
-  text-decoration: none; /* Removes the underline */
+  text-decoration: none;
 }
 
 .phone-link:hover {
-  text-decoration: none; /* Ensures underline doesn't appear on hover */
+  text-decoration: none;
+  /* Ensures underline doesn't appear on hover */
 }
 
 /* Hero Section Styles */
@@ -176,13 +182,18 @@ body {
 
 /* Team Section Styles */
 .team-section {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
-  padding: 5rem 0; /* Spacing */
-  height: 50vh; /* Custom height */
-  display: flex; /* Enable Flexbox */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+  background-color: #000;
+  /* Black background */
+  color: #fff;
+  /* White text */
+  padding: 5rem 0;
+  /* Spacing */
+  display: flex;
+  /* Enable Flexbox */
+  align-items: center;
+  /* Center vertically */
+  justify-content: center;
+  /* Center horizontally */
 }
 
 .team-section .container {
@@ -194,48 +205,63 @@ body {
 
 .team-section h2 {
   font-size: 2.5rem;
-  font-weight: 600; /* Semi-bold for the heading */
+  font-weight: 600;
+  /* Semi-bold for the heading */
   margin-bottom: 2rem;
 }
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
-  gap: 2rem; /* Spacing between team members */
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns on larger screens */
+  gap: 2rem;
+  /* Spacing between team members */
 }
 
 .team-member {
-  display: flex; /* Flexbox for alignment */
-  align-items: center; /* Center items vertically */
-  gap: 1.5rem; /* Spacing between avatar and text */
-  text-align: left; /* Align text to the left */
+  display: flex;
+  /* Flexbox for alignment */
+  align-items: center;
+  /* Center items vertically */
+  gap: 1.5rem;
+  /* Spacing between avatar and text */
+  text-align: left;
+  /* Align text to the left */
 }
 
 .team-member-photo {
-  width: 100px; /* Smaller size for the avatar */
+  width: 100px;
+  /* Smaller size for the avatar */
   height: 100px;
-  border-radius: 50%; /* Make the image circular */
-  object-fit: cover; /* Ensure the image fits well */
+  border-radius: 50%;
+  /* Make the image circular */
+  object-fit: cover;
+  /* Ensure the image fits well */
 }
 
 .team-member-info h3 {
   font-size: 1.5rem;
-  font-weight: 600; /* Semi-bold for the name */
+  font-weight: 600;
+  /* Semi-bold for the name */
   margin-bottom: 0.5rem;
 }
 
 .team-member-info p {
   font-size: 1rem;
-  font-weight: 300; /* Light for the resume */
-  color: #ccc; /* Light gray for less emphasis */
+  font-weight: 300;
+  /* Light for the resume */
+  color: #ccc;
+  /* Light gray for less emphasis */
 }
 
 /* About Section Styles */
 .about-section {
-  background-image: url('/images/about-bg.webp'); /* Background image */
+  background-image: url('/images/about-bg.webp');
+  /* Background image */
   background-size: cover;
   background-position: center;
-  padding: 5rem 0; /* Spacing */
+  padding: 5rem 0;
+  /* Spacing */
 }
 
 .about-section .container {
@@ -247,55 +273,70 @@ body {
 
 .about-section h2 {
   font-size: 2.5rem;
-  font-weight: 600; /* Semi-bold for the heading */
-  color: #fff; /* White text */
+  font-weight: 600;
+  /* Semi-bold for the heading */
+  color: #fff;
+  /* White text */
   margin-bottom: 2rem;
 }
 
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Four columns on larger screens */
-  gap: 2rem; /* Spacing between items */
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns on smaller screens */
+  gap: 2rem;
+  /* Spacing between items */
 }
 
 .about-item {
-  background-color: rgba(0, 0, 0, 0.8); /* Black background with 80% opacity */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black background with 80% opacity */
   padding: 2rem;
-  border-radius: 0.5rem; /* Rounded corners */
+  border-radius: 0.5rem;
+  /* Rounded corners */
   text-align: center;
-  color: #fff; /* White text */
+  color: #fff;
+  /* White text */
 }
 
 .about-icon {
-  width: 80px; /* Fixed size for the GIF */
+  width: 80px;
+  /* Fixed size for the GIF */
   height: 80px;
   margin-bottom: 1rem;
 }
 
 .about-item h3 {
   font-size: 1.5rem;
-  font-weight: 600; /* Semi-bold for the title */
+  font-weight: 600;
+  /* Semi-bold for the title */
   margin-bottom: 1rem;
 }
 
 .about-item p {
   font-size: 1rem;
-  font-weight: 300; /* Light for the text */
+  font-weight: 300;
+  /* Light for the text */
   line-height: 1.6;
 }
 
-.about-section .container > p {
-  color: #fff; /* White text */
-  padding-bottom: 2rem; /* Add padding below the paragraph */
+.about-section .container>p {
+  color: #fff;
+  /* White text */
+  padding-bottom: 2rem;
+  /* Add padding below the paragraph */
 }
 
 /* Video Section Styles */
 .video-section {
-  background-image: url('/images/fondo.webp'); /* Background image */
+  background-image: url('/images/fondo.webp');
+  /* Background image */
   background-size: cover;
   background-position: center;
-  padding: 5rem 0; /* Spacing */
-  color: #fff; /* White text */
+  padding: 5rem 0;
+  /* Spacing */
+  color: #fff;
+  /* White text */
   text-align: center;
 }
 
@@ -307,19 +348,24 @@ body {
 
 .video-section h2 {
   font-size: 2.5rem;
-  font-weight: 600; /* Semi-bold for the heading */
-  margin-bottom: 1rem; /* Space below the heading */
+  font-weight: 600;
+  /* Semi-bold for the heading */
+  margin-bottom: 1rem;
+  /* Space below the heading */
 }
 
 .video-section p {
   font-size: 1.25rem;
-  font-weight: 300; /* Light for the text */
-  margin-bottom: 2rem; /* Space below the paragraph */
+  font-weight: 300;
+  /* Light for the text */
+  margin-bottom: 2rem;
+  /* Space below the paragraph */
 }
 
 .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
   max-width: 100%;
@@ -338,24 +384,30 @@ body {
 
 /* CTA Button Styles (Matching Hero Section) */
 .cta-button {
-  background-color: #e12a16; /* Match the button color from the rest of the page */
+  background-color: #e12a16;
+  /* Match the button color from the rest of the page */
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   text-decoration: none;
   transition: background-color 0.3s;
-  font-weight: 600; /* Semi-bold */
+  font-weight: 600;
+  /* Semi-bold */
 }
 
 .cta-button:hover {
-  background-color: #c8231a; /* Darker shade on hover */
+  background-color: #c8231a;
+  /* Darker shade on hover */
 }
 
 /* Partners Section Styles */
 .partners-section {
-  background-color: #000; /* Black background */
-  color: #fff; /* White text */
-  padding: 5rem 0; /* Spacing */
+  background-color: #000;
+  /* Black background */
+  color: #fff;
+  /* White text */
+  padding: 5rem 0;
+  /* Spacing */
   text-align: center;
 }
 
@@ -367,16 +419,22 @@ body {
 
 .partners-section h2 {
   font-size: 2.5rem;
-  font-weight: 600; /* Semi-bold for the heading */
-  margin-bottom: 2rem; /* Space below the heading */
+  font-weight: 600;
+  /* Semi-bold for the heading */
+  margin-bottom: 2rem;
+  /* Space below the heading */
 }
 
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens */
-  gap: 2rem; /* Spacing between logos */
-  justify-items: center; /* Center logos horizontally */
-  align-items: center; /* Center logos vertically */
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columns on larger screens */
+  gap: 2rem;
+  /* Spacing between logos */
+  justify-items: center;
+  /* Center logos horizontally */
+  align-items: center;
+  /* Center logos vertically */
 }
 
 .partner-logo {
@@ -386,17 +444,22 @@ body {
 }
 
 .partner-logo img {
-  max-width: 100%; /* Ensure logos don't overflow */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Ensure logos don't overflow */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 /* Contact Section Styles */
 .contact-section {
-  background-image: url('/images/contact.png'); /* Background image */
+  background-image: url('/images/contact.png');
+  /* Background image */
   background-size: cover;
   background-position: center;
-  padding: 5rem 0; /* Spacing */
-  color: #fff; /* White text */
+  padding: 5rem 0;
+  /* Spacing */
+  color: #fff;
+  /* White text */
 }
 
 .contact-section .container {
@@ -407,33 +470,42 @@ body {
 
 .contact-section h2 {
   font-size: 2.5rem;
-  font-weight: 600; /* Semi-bold for the heading */
-  margin-bottom: 1rem; /* Space below the heading */
+  font-weight: 600;
+  /* Semi-bold for the heading */
+  margin-bottom: 1rem;
+  /* Space below the heading */
 }
 
 .contact-section p {
   font-size: 1.25rem;
-  font-weight: 300; /* Light for the text */
-  margin-bottom: 2rem; /* Space below the paragraph */
+  font-weight: 300;
+  /* Light for the text */
+  margin-bottom: 2rem;
+  /* Space below the paragraph */
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
-  gap: 2rem; /* Spacing between columns */
-  align-items: center; /* Center items vertically */
+  grid-template-columns: 1fr 1fr;
+  /* Two columns */
+  gap: 2rem;
+  /* Spacing between columns */
+  align-items: center;
+  /* Center items vertically */
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* Spacing between form fields */
+  gap: 1rem;
+  /* Spacing between form fields */
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* Spacing between label and input */
+  gap: 0.5rem;
+  /* Spacing between label and input */
 }
 
 .form-input {
@@ -442,17 +514,21 @@ body {
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   font-size: 1rem;
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  color: #fff; /* White text */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent background */
+  color: #fff;
+  /* White text */
 }
 
 .form-input::placeholder {
-  color: #ccc; /* Light gray placeholder text */
+  color: #ccc;
+  /* Light gray placeholder text */
 }
 
 .phone-input {
   display: flex;
-  gap: 0.5rem; /* Spacing between country code and phone number */
+  gap: 0.5rem;
+  /* Spacing between country code and phone number */
 }
 
 .country-code {
@@ -460,8 +536,10 @@ body {
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   font-size: 1rem;
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  color: #fff; /* White text */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent background */
+  color: #fff;
+  /* White text */
 }
 
 .contact-logo {
@@ -471,73 +549,77 @@ body {
 }
 
 .contact-logo img {
-  max-width: 80%; /* Ensure the logo doesn't overflow */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 80%;
+  /* Ensure the logo doesn't overflow */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 /* CTA Button Styles (Matching Hero Section) */
 .cta-button {
-  background-color: #e12a16; /* Match the button color from the rest of the page */
+  background-color: #e12a16;
+  /* Match the button color from the rest of the page */
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   text-decoration: none;
   transition: background-color 0.3s;
   font-size: 1rem;
-  font-weight: 600; /* Semi-bold */
-  border: none; /* Remove default button border */
-  cursor: pointer; /* Add pointer cursor on hover */
+  font-weight: 600;
+  /* Semi-bold */
+  border: none;
+  /* Remove default button border */
+  cursor: pointer;
+  /* Add pointer cursor on hover */
 }
 
 .cta-button:hover {
-  background-color: #c8231a; /* Darker shade on hover */
+  background-color: #c8231a;
+  /* Darker shade on hover */
 }
 
 .footer {
   background-color: #000;
   color: #fff;
 }
+
+
 /* Responsive Styles */
+
 @media (max-width: 768px) {
+
+  .navbar .cta-button {
+    font-size: .8rem;
+  }
+
+  .gap-8 {
+    gap: .5rem;
+  }
+
+  .navbar .logo img {
+    max-width: 80%;
+  }
+
+  .phone-link {
+    font-size: .8rem;
+  }
+
+  .hero {
+    height: 90vh;
+  }
+
   .contact-grid {
-    grid-template-columns: 1fr; /* One column on smaller screens */
+    grid-template-columns: 1fr;
+    /* One column on smaller screens */
   }
 
   .contact-logo {
-    order: -1; /* Move the logo above the form on smaller screens */
-    margin-bottom: 2rem; /* Add spacing below the logo */
+    order: -1;
+    /* Move the logo above the form on smaller screens */
+    margin-bottom: 2rem;
+    /* Add spacing below the logo */
   }
-}
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .partners-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .partners-grid {
-    grid-template-columns: 1fr; /* 1 column on very small screens */
-  }
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .about-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .about-grid {
-    grid-template-columns: 1fr; /* One column on very small screens */
-  }
-}
-
-/* Responsive Styles */
-
-@media (max-width: 768px) {
   .hero .container {
     grid-template-columns: 1fr;
   }
@@ -547,15 +629,41 @@ body {
   }
 
   .team-grid {
-    grid-template-columns: 1fr; /* One column on smaller screens */
+    grid-template-columns: 1fr;
   }
 
   .team-member {
-    flex-direction: column; /* Stack avatar and text on smaller screens */
-    text-align: center; /* Center text */
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 
   .team-member-photo {
-    margin-bottom: 1rem; /* Add spacing below the avatar */
+    margin-bottom: 1rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns on smaller screens */
+  }
+
+  .footer {
+font-size: .6rem;
+  }
+
+  @media (max-width: 480px) {
+    .partners-grid {
+      grid-template-columns: 1fr;
+      /* 1 column on very small screens */
+    }
+
+    .about-grid {
+      grid-template-columns: 1fr;
+      /* One column on very small screens */
+    }
   }
 }
